@@ -30,11 +30,10 @@ body{
 img{
     max-width: 100%;
 }
-header{
+.header{
     background-color: #426fe0;
 }
 .header-desc{
-    background-color: #426fe0;
     color: white;
     text-decoration: none;
     text-transform: none;
@@ -48,6 +47,10 @@ header{
 
 
 }
+.header-desc input{
+    color: black;
+
+}
 .logo-contact{
     display: flex;
     justify-content: space-around;
@@ -56,6 +59,7 @@ header{
 }
 .header-social{
     padding: 10px;
+    cursor: pointer;
 }
 .hero{
     display: flex;
@@ -98,15 +102,19 @@ header{
     padding: 10px;
     font-weight: 400;
     text-align: center;
+
 }
-.meal-desc {
+.meal-desc  {
     color: white;
-    list-style-type: none;
-    text-decoration: none;
-    text-transform: none;
     text-align: center;
     font-size: 16px;
     padding: 3px 0 10px;
+}
+.meal-desc a{
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: none;
+
 }
 .img-mealInfo{
     max-width:  450px;
@@ -165,10 +173,11 @@ header{
     text-align: center;
     font-size: 20px;
     font-weight: 300;
-    padding-top: 10px;
+    padding: 10px 0 70px;
 }
 
 .footer{
+    margin-top: 50px;
     padding: 30px 0;
     background-color: #426fe0;
 }
@@ -218,7 +227,7 @@ header{
     font-size: 18px;
     font-weight: 400;
 }
-.footer-info-title{
+.footer-info-title {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
@@ -235,7 +244,83 @@ header{
 
 .about-img{
   text-align: center;
-    margin-left: 515px;
+    margin-left: 460px;
     margin-bottom: 20px;
 
 }
+.faq-title{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px 0;
+}
+.faq-desc{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+.faq-img{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 520px;
+
+}
+
+.contact-title{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px 0;
+}
+.contact-desc{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contact-link{
+   margin: 49px;
+
+}
+
+.official-link-caption{
+   font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px;
+}
+
+.official-link{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.browse-caption{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.row.browse{
+    margin-top: 50px;
+}
+
+.browse-title{
+  font-size: 24px;
+  font-weight: 400;
+   text-align: center;
+    margin-top: 20px;
+
+
+}
+.browse-navigation{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+

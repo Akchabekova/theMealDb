@@ -2,6 +2,7 @@ import React from 'react';
 import RandomMeals from "../../components/RandomMeals";
 import LatestMeals from "../../components/LatestMeals";
 import Footer from '../../components/Footer';
+import BrowseNavigation from "../../components/BrowseNavigation";
 
 const HomePage = () => {
     return (
@@ -20,12 +21,14 @@ const HomePage = () => {
                 <img src={"https://www.themealdb.com/images/meal-icon.png"} />
             </div>
             <div className="line"></div>
-            <input type="text"/>
-            <div className="line"></div>
             <LatestMeals />
             <div className="line"></div>
             <RandomMeals />
-            <Footer />
+            <div className="line"></div>
+            <BrowseNavigation />
+
+
+
         </div >
     );
 };

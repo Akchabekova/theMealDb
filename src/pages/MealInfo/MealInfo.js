@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import axios from "axios";
+import ReactPlayer from "react-player";
 
 const MealInfo = () => {
     const {id} = useParams()
@@ -48,6 +49,7 @@ const MealInfo = () => {
                 <div className="line-info"></div>
                 <h3 className="instruction-info">Instruction</h3>
                 <div className="instruction-desc">{meal.strInstructions}</div>
+                <ReactPlayer  url={meal.strYoutube} />
         </div>
         </div>
     );

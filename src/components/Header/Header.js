@@ -1,11 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import HomePage from "../../pages/HomePage";
+import {useNavigate} from "react-router-dom"
+
 
 
 const Header = () => {
+    let navigate = useNavigate();
+    const [search, setSearch] = useState("")
+    const handleChange = (e) => setSearch(e.target.value)
+    const handleSearch = (e) => {
+        if(e.key === "Enter"){
+            navigate(`/browse/${search}`)
+            setSearch("")
+        }
+    }
     return (
-        <div className="Header">
+        <div className="header">
        <div className="container">
         <div className="header-desc">
             <div className="logo-img">
@@ -21,7 +31,9 @@ const Header = () => {
                 <div className="header-desc">Forum</div>
                 <img className="header-social" src={"https://www.themealdb.com/images/facebook_icon.png"}/>
                 <img className="header-social" src={"https://www.themealdb.com/images/twitter_icon.png"}/>
-                <input type='text' />
+                <input type='text' onChange={handleChange} onKeyPress={handleSearch}  placeholder={"Search"} value={search}/>
+                <Link  to={`/browse/${search}`} className="input-header">Search</Link>
+
             </div>
         </div>
        </div>
