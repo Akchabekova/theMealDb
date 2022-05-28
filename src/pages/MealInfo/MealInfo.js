@@ -49,7 +49,7 @@ const MealInfo = () => {
                 <p className="line-info"></p>
                 <h3 className="instruction-info">Instruction</h3>
                 <div className="instruction-desc">{meal.strInstructions}</div>
-                <ReactPlayer  url={meal.strYoutube} />
+                {/*<ReactPlayer  url={meal.strYoutube} />*/}
         </div>
         </div>
     );
