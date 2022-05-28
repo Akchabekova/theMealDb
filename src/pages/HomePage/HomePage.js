@@ -20,11 +20,11 @@ const HomePage = () => {
                 </div>
                 <img src={"https://www.themealdb.com/images/meal-icon.png"} />
             </div>
-            <div className="line"></div>
+            <p className="line"></p>
             <LatestMeals />
-            <div className="line"></div>
+            <p className="line"></p>
             <RandomMeals />
-            <div className="line"></div>
+            <p className="line"></p>
             <BrowseNavigation />
 
 

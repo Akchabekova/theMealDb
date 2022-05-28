@@ -17,7 +17,7 @@ const MealInfo = () => {
         setIngredients(result)
     }
     useEffect(() =>{
-        axios(`https:themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+        axios(`https://themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
             .then(res => {
                 setMeal(res.data.meals[0])
                 getIngredients(res.data.meals[0])
@@ -46,10 +46,10 @@ const MealInfo = () => {
                     </div>
                 </div>
             </div>
-                <div className="line-info"></div>
+                <p className="line-info"></p>
                 <h3 className="instruction-info">Instruction</h3>
                 <div className="instruction-desc">{meal.strInstructions}</div>
-                {/*<ReactPlayer  url={meal.strYoutube} />*/}
+                <ReactPlayer  url={meal.strYoutube} />
         </div>
         </div>
     );
